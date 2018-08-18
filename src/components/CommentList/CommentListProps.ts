@@ -1,7 +1,6 @@
 import CommentState from "../../states/Comment/CommentState";
 
 export interface CommentListOwnProps {
-  users: any;
 }
 export interface CommentListConnectedProps {
   commentState: CommentState

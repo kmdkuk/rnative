@@ -14,7 +14,7 @@ export default class BoardList extends React.Component<BoardListProps> {
         <ListView
           dataSource={dsBoard}
           renderRow={(rowData) => {
-            let act = rowData.id == boardState.sel_board ? true : false;
+            let act = rowData.id == boardState.id ? true : false;
             return (
               <BoardLine
                 active={act}

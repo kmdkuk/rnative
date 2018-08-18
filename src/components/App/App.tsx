@@ -19,7 +19,7 @@ export default class App extends Component<AppProps> {
 
     let dsBoard = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 
-    this.state = { ...this.state, dataSourceBoard: dsBoard, users: [] };
+    this.state = { dataSourceBoard: dsBoard, users: [] };
   }
   componentDidMount() {
     this.readInit();
