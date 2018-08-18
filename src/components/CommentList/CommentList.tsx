@@ -4,7 +4,7 @@ import {
   View
 } from 'react-native';
 
-export default class CommentsList extends React.Component {
+export default class CommentList extends React.Component {
   render() {
     return (
       <View style={{ flex: 12, padding: 10 }}>

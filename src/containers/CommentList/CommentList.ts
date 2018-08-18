@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import IState from "../../states";
 import { Dispatch } from "redux";
 import { BoardAction } from "../../actions/Board/BoardAction";
-import CommentsList from "../../components/CommentsList/CommentsList";
+import CommentList from "../../components/CommentList/CommentList";
 
 function mapStateToProps(state: IState) {
   return {
@@ -16,4 +16,4 @@ function mapDispatchToProps(dispatch: Dispatch<BoardAction>) {
 
 export default connect(
   mapStateToProps, mapDispatchToProps
-)(CommentsList);
+)(CommentList);
