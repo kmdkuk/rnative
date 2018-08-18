@@ -9,7 +9,7 @@ export interface BoardListConnectedProps {
 }
 
 export interface BoardListDispatchProps {
-  onBoardSelect: (id: number) => () => void;
+  onBoardSelect: (id: number) => void;
 }
 
 type BoardListProps = BoardListOwnProps & BoardListConnectedProps & BoardListDispatchProps

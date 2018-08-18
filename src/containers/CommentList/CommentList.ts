@@ -3,9 +3,11 @@ import IState from "../../states";
 import { Dispatch } from "redux";
 import { BoardAction } from "../../actions/Board/BoardAction";
 import CommentList from "../../components/CommentList/CommentList";
+import { CommentListConnectedProps } from "../../components/CommentList/CommentListProps";
 
-function mapStateToProps(state: IState) {
+function mapStateToProps(state: IState): CommentListConnectedProps {
   return {
+    commentState: state.commentState
   };
 }
 
