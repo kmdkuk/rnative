@@ -19,3 +19,5 @@ export interface ISelectUser {
   type: BoardActionType.SELECT_USER
   id: number
 }
+
+export type BoardAction = ISelectBoard | ICommentsRead | ITokenChange | ISelectUser;
