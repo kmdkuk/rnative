@@ -1,3 +1,4 @@
 export default interface BoardState {
-  id: number
+  id: number,
+  sel_board: any,
 }

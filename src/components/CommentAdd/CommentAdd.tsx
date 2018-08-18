@@ -3,8 +3,9 @@ import {
   Text,
   View
 } from 'react-native';
+import CommentAddProps from './CommentAddProps';
 
-export default class CommentAdd extends React.Component {
+export default class CommentAdd extends React.Component<CommentAddProps> {
   render() {
     return (
       <View style={{ flex: 4 }}>

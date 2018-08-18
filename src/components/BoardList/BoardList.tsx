@@ -1,17 +1,30 @@
 import * as React from 'react'
 import {
-  Text,
-  View
+  View,
+  ListView
 } from 'react-native';
+import BoardListProps from './BoardListProps';
+import BoardLine from './BoardLine/BoardLine';
 
-export default class BoardList extends React.Component {
+export default class BoardList extends React.Component<BoardListProps> {
   render() {
+    const { dsBoard, boardState, onBoardSelect } = this.props;
     return (
       <View style={{ flex: 4 }}>
-        <Text>
-          This is BoardList
-      </Text>
-      </View >
+        <ListView
+          dataSource={dsBoard}
+          renderRow={(rowData) => {
+            let act = rowData.id == boardState.sel_board ? true : false;
+            return (
+              <BoardLine
+                active={act}
+                rowData={rowData}
+                onPress={(id) => onBoardSelect(id)}
+              />
+            )
+          }}
+        />
+      </View>
     );
   }
 
